@@ -1,6 +1,19 @@
-function hasTargetSum(array, target) {
+const array = [3, 8, 12, 4, 11, 7]
+const targetsum =10
+function hasTargetSum(array, targetsum) {
+  for (let i = 0; i < array.length; i++) {
+    for (let b=i+1; b< array.length; b++){
+      if(array[i] + array[b] ===targetsum){
+        return true;
+      }
+
+    }
+   
+  }
+  return false;
   // Write your algorithm here
 }
+
 
 /* 
   Write the Big O time complexity of your function here
